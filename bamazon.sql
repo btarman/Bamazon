@@ -23,4 +23,13 @@ INSERT INTO products (product_name, department_name, price, stock_quantity) VALU
 INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('Guitar Tuner', 'Music', 95.00, 30);
 INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('Coffee Table', 'Home Goods', 200.00, 5);
 
+USE bamazon_db;
+CREATE TABLE departments (
+department_id INT NOT NULL AUTO_INCREMENT,
+department_name VARCHAR(100) NULL,
+over_head_costs DECIMAL(7,2) NULL,
+total_sales DECIMAL(7,2) NULL,
+PRIMARY KEY(department_id)
+)
+ALTER TABLE products ADD product_sales DECIMAL(7,2);
 
