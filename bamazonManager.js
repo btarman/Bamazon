@@ -90,7 +90,7 @@ var addInventory = function() {
 			if(err) throw err;
 			connection.query('SELECT * FROM products WHERE item_id = ?', updateInventoryArr[0].inventoryID, function(err, results) {
 				console.log('');
-				console.log('Updated quantity for #' + updateInventoryArr[0].inventoryID + ': ' + results[0].product_name + ' is ' + results[0].stock_quantity);
+				console.log(('Updated quantity for #' + updateInventoryArr[0].inventoryID + ': ' + results[0].product_name + ' is ' + results[0].stock_quantity).underline.red);
 				connection.end()
 			})
 		})
