@@ -1,6 +1,6 @@
 # Bamazon
 # Overview
-Bamazon is a command line application that uses the SQL database. There are to command options, customer or manager. The customer can buy products from the store, while the manager has four different options.
+Bamazon is a command line application that uses the SQL database. There are two command options, customer or manager. The customer can buy products from the store, while the manager has four different options.
 
 ## Bamazon Customer Option
 
@@ -40,5 +40,15 @@ This allows the manager to add new inventory to a selected product
 This allows the manager to add a new item into the table
 
 ![fifth screenshot](images/screenshot5.png)
+
+## Technologies Used
+
+* Javascript
+* NodeJS
+* MySQL
+* npm packages:
+	* mysql
+	* prompt
+	* colors
 
 
